@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link href="~/plugins/fontsGoogleApis/FontsGoogleApis.css" rel="stylesheet">
+    <link href="~/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="~/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet">
+    <link href="~/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet">
+    <link href="~/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet">
+    <link href="~/plugins/select2/css/select2.min.css" rel="stylesheet">
+    <link href="~/plugins/select2/css/select2-bootstrap.min.css" rel="stylesheet">
+    <link href="~/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet">
+    <link href="~/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="~/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css" rel="stylesheet">
+    <link href="~/plugins/bootstrap-touchspin/bootstrap.touchspin.css" rel="stylesheet">
+    <link href="~/plugins/ion.rangeslider/css/ion.rangeSlider.css" rel="stylesheet">
+    <link href="~/plugins/ion.rangeslider/css/ion.rangeSlider.skinFlat.css" rel="stylesheet">
+    <link href="~/plugins/bootstrap-toastr/toastr.min.css" rel="stylesheet">
+    <link href="~/plugins/bootstrap-fileinput/bootstrap-fileinput.css" rel="stylesheet">
+    <link href="~/plugins/datatables/datatables.min.css" rel="stylesheet">
+    <link href="~/plugins/datatables/KeyTable/css/keyTable.dataTables.min.css" rel="stylesheet">
+    <link href="~/plugins/datatables/Editor/css/editor.dataTables.min.css" rel="stylesheet">
+    <link href="~/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+    <link href="~/plugins/jstree/dist/themes/default/style.min.css" rel="stylesheet">
+    <link href="~/plugins/bootstrap-sweetalert/sweetalert.css" rel="stylesheet">
+    <link href="~/plugins/jquery-multi-select/css/multi-select.css" rel="stylesheet">
+    <link href="~/plugins/typeahead/typeahead.css" rel="stylesheet">
+    <link href="~/plugins/icheck/skins/square/_all.css" rel="stylesheet">
+    <link href="~/plugins/amcharts/amcharts/plugins/export/export.css" rel="stylesheet">
+    <link href="~/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css" rel="stylesheet">
+    <link href="~/plugins/daterangepicker/daterangepicker.css" rel="stylesheet">
+    <link href="~/css/components.min.css" rel="stylesheet">
+    <link href="~/css/plugins.min.css" rel="stylesheet">
+    <link href="~/css/layout/css/layout.min.css" rel="stylesheet">
+    <link href="~/css/layout/css/themes/darkblue.min.css" rel="stylesheet">
+    <link href="~/css/layout/css/custom.css" rel="stylesheet">
+    <link href="~/css/layout/css/themes/darkblue.min.css" rel="stylesheet" id="style_color">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">GestionUsuario.UI</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2021 - GestionUsuario.UI - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
