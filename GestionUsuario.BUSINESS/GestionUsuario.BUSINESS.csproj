@@ -4,4 +4,9 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\GestionUsuario.DATA\GestionUsuario.DATA.csproj" />
+    <ProjectReference Include="..\GestionUsuario.INFRAESTRUCTURE\GestionUsuario.INFRAESTRUCTURE.csproj" />
+  </ItemGroup>
+
 </Project>

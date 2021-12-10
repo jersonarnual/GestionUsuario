@@ -7,6 +7,10 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.12">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
@@ -176,6 +180,12 @@
     <Folder Include="wwwroot\plugins\wysihtml\lib\base\" />
     <Folder Include="wwwroot\plugins\wysihtml\lib\rangy\" />
     <Folder Include="wwwroot\plugins\wysihtml\parser_rules\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GestionUsuario.BUSINESS\GestionUsuario.BUSINESS.csproj" />
+    <ProjectReference Include="..\GestionUsuario.DATA\GestionUsuario.DATA.csproj" />
+    <ProjectReference Include="..\GestionUsuario.INFRAESTRUCTURE\GestionUsuario.INFRAESTRUCTURE.csproj" />
   </ItemGroup>
 
 </Project>
