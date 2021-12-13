@@ -11,8 +11,8 @@ namespace GestionUsuario.INFRAESTRUCTURE.DTO
         public string Email { get; set; }
         public int Age { get; set; }
         public bool State { get; set; }
-        public int GenderId { get; set; }
-        public int TypeDocumentId { get; set; }
+        public Guid GenderId { get; set; }
+        public Guid TypeDocumentId { get; set; }
         public string CreateBy { get; set; }
         public string UpdateBy { get; set; }
         public DateTime CreateTime { get; set; }
